@@ -25,8 +25,8 @@ function rand() {
 class Demo extends Component {
   state = {
     brushColor: rand(),
-    canvasHeight: 350,
-    canvasWidth: 380,
+    canvasWidth: 1280,
+    canvasHeight: 720,
     brushRadius: 4,
     lazyRadius: 8
   }
@@ -54,7 +54,7 @@ class Demo extends Component {
       })
     window.addEventListener('mouseup', (e) => {
       // If we are clicking on a button, do not update anything
-      if (e.target.name === 'clearbutton') return 
+      if (e.target.name === 'clearbutton') return
       this.setState({
         brushColor: rand()
       })
